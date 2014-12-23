@@ -12,7 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.navigationController?.navigationBar.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        let menuItemImage = UIImage(named: "reveal-icon")
+        let revealButtonItem = UIBarButtonItem(image: menuItemImage, style: .Plain, target: self.revealViewController(), action: Selector("revealToggle:"))
+        self.navigationItem.leftBarButtonItem = revealButtonItem
     }
 
     override func didReceiveMemoryWarning() {
