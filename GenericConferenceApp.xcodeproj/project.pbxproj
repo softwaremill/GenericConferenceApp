@@ -16,6 +16,7 @@
 		01FAE39D1A49FF4600DF3660 /* GenericConferenceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FAE39C1A49FF4600DF3660 /* GenericConferenceAppTests.swift */; };
 		01FAE3AC1A4A0F9A00DF3660 /* reveal-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FAE3AA1A4A0F9A00DF3660 /* reveal-icon.png */; };
 		01FAE3AD1A4A0F9A00DF3660 /* reveal-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FAE3AB1A4A0F9A00DF3660 /* reveal-icon@2x.png */; };
+		01FAE3B11A4AD00D00DF3660 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FAE3B01A4AD00D00DF3660 /* MenuViewController.swift */; };
 		3A92DE1DDDAD0D06C787007C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 813DEF88ED54006C0AA32046 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		01FAE3A61A4A0BF000DF3660 /* GenericConferenceApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GenericConferenceApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		01FAE3AA1A4A0F9A00DF3660 /* reveal-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon.png"; sourceTree = "<group>"; };
 		01FAE3AB1A4A0F9A00DF3660 /* reveal-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon@2x.png"; sourceTree = "<group>"; };
+		01FAE3B01A4AD00D00DF3660 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		677D93D2A58438490925D367 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		813DEF88ED54006C0AA32046 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3766E03518AE78239401740 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,9 +93,9 @@
 		01FAE3801A49FF4600DF3660 /* GenericConferenceApp */ = {
 			isa = PBXGroup;
 			children = (
+				01FAE3B21A4AD01900DF3660 /* Views */,
 				01FAE3A91A4A0F8B00DF3660 /* Resources */,
 				01FAE3831A49FF4600DF3660 /* AppDelegate.swift */,
-				01FAE3881A49FF4600DF3660 /* ViewController.swift */,
 				01FAE38A1A49FF4600DF3660 /* Main.storyboard */,
 				01FAE38D1A49FF4600DF3660 /* Images.xcassets */,
 				01FAE38F1A49FF4600DF3660 /* LaunchScreen.xib */,
@@ -136,6 +138,15 @@
 				01FAE3AB1A4A0F9A00DF3660 /* reveal-icon@2x.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		01FAE3B21A4AD01900DF3660 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01FAE3881A49FF4600DF3660 /* ViewController.swift */,
+				01FAE3B01A4AD00D00DF3660 /* MenuViewController.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		3B58F66D41A7A0EA0BD03671 /* Frameworks */ = {
@@ -295,6 +306,7 @@
 				01FAE3891A49FF4600DF3660 /* ViewController.swift in Sources */,
 				01FAE3841A49FF4600DF3660 /* AppDelegate.swift in Sources */,
 				01FAE3871A49FF4600DF3660 /* GenericConferenceApp.xcdatamodeld in Sources */,
+				01FAE3B11A4AD00D00DF3660 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
