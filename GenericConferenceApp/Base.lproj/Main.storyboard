@@ -70,8 +70,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oqv-Gp-wV0">
-                                <rect key="frame" x="6" y="7" width="52" height="27"/>
-                                <state key="normal" title="Button" image="reveal-icon.png"/>
+                                <rect key="frame" x="6" y="7" width="38" height="27"/>
+                                <state key="normal" image="reveal-icon.png"/>
                                 <connections>
                                     <action selector="revealMenu:" destination="6oP-Th-zAx" eventType="touchUpInside" id="8NK-O4-P01"/>
                                 </connections>

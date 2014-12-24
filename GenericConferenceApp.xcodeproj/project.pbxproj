@@ -46,6 +46,8 @@
 		01FAE3AA1A4A0F9A00DF3660 /* reveal-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon.png"; sourceTree = "<group>"; };
 		01FAE3AB1A4A0F9A00DF3660 /* reveal-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon@2x.png"; sourceTree = "<group>"; };
 		01FAE3B01A4AD00D00DF3660 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		01FAE3B41A4AD21C00DF3660 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		01FAE3B81A4AD3F400DF3660 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Main.strings; sourceTree = "<group>"; };
 		677D93D2A58438490925D367 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		813DEF88ED54006C0AA32046 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3766E03518AE78239401740 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			knownRegions = (
 				en,
 				Base,
+				pl,
 			);
 			mainGroup = 01FAE3751A49FF4600DF3660;
 			productRefGroup = 01FAE37F1A49FF4600DF3660 /* Products */;
@@ -333,6 +336,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				01FAE38B1A49FF4600DF3660 /* Base */,
+				01FAE3B81A4AD3F400DF3660 /* pl */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -341,6 +345,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				01FAE3901A49FF4600DF3660 /* Base */,
+				01FAE3B41A4AD21C00DF3660 /* pl */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
