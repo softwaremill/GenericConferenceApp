@@ -12,24 +12,18 @@ class MenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
-    
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        println("segue...")
         if (segue.identifier == "talks") {
-            println("going to talks...")
             let srvc = self.revealViewController;
             let destination = segue.destinationViewController as TalksViewController;
             self.revealViewController().setFrontViewController(destination, animated: true)

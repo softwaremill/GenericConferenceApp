@@ -1,3 +1,19 @@
 
+/* Class = "IBUIButton"; normalTitle = "SPEAKERS"; ObjectID = "Hza-Ht-d2d"; */
+"Hza-Ht-d2d.normalTitle" = "PRELEGENCI";
+
+/* Class = "IBUIButton"; normalTitle = "TALKS"; ObjectID = "My7-4f-Euk"; */
+"My7-4f-Euk.normalTitle" = "WYKŁADY";
+
+/* Class = "IBUIButton"; normalTitle = "MY AGENDA"; ObjectID = "OK2-SF-pFN"; */
+"OK2-SF-pFN.normalTitle" = "MOJA AGENDA";
+
+/* Class = "IBUIButton"; normalTitle = "SPONSORS"; ObjectID = "Qbb-Yo-QGM"; */
+"Qbb-Yo-QGM.normalTitle" = "SPONSORZY";
+
 /* Class = "IBUILabel"; text = "content goes here..."; ObjectID = "boH-Q2-mGc"; */
 "boH-Q2-mGc.text" = "zawartość będzie tutaj...";
+
+/* Class = "IBUIButton"; normalTitle = "VENUE"; ObjectID = "inl-tw-hz7"; */
+"inl-tw-hz7.normalTitle" = "MIEJSCE";
+
