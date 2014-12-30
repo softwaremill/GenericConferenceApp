@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0103593D1A52BA8400213C81 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0103593C1A52BA8400213C81 /* SpriteKit.framework */; };
+		010359411A52BF5900213C81 /* menu-bcg.png in Resources */ = {isa = PBXBuildFile; fileRef = 010359401A52BF5900213C81 /* menu-bcg.png */; };
+		010359431A52C43B00213C81 /* sml-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 010359421A52C43B00213C81 /* sml-logo.png */; };
+		019B1D771A4AEEA40097939C /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B1D761A4AEEA40097939C /* GlobalConstants.swift */; };
 		01FAE3841A49FF4600DF3660 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FAE3831A49FF4600DF3660 /* AppDelegate.swift */; };
 		01FAE3871A49FF4600DF3660 /* GenericConferenceApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01FAE3851A49FF4600DF3660 /* GenericConferenceApp.xcdatamodeld */; };
 		01FAE3891A49FF4600DF3660 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FAE3881A49FF4600DF3660 /* ViewController.swift */; };
@@ -31,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0103593C1A52BA8400213C81 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		010359401A52BF5900213C81 /* menu-bcg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bcg.png"; sourceTree = "<group>"; };
+		010359421A52C43B00213C81 /* sml-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sml-logo.png"; sourceTree = "<group>"; };
+		019B1D761A4AEEA40097939C /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		01FAE37E1A49FF4600DF3660 /* GenericConferenceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericConferenceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01FAE3821A49FF4600DF3660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01FAE3831A49FF4600DF3660 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0103593D1A52BA8400213C81 /* SpriteKit.framework in Frameworks */,
 				3A92DE1DDDAD0D06C787007C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0103593E1A52BDA400213C81 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				010359421A52C43B00213C81 /* sml-logo.png */,
+				010359401A52BF5900213C81 /* menu-bcg.png */,
+			);
+			name = menu;
+			sourceTree = "<group>";
+		};
+		019B1D751A4AEE910097939C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				019B1D761A4AEEA40097939C /* GlobalConstants.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		01FAE3751A49FF4600DF3660 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +121,7 @@
 		01FAE3801A49FF4600DF3660 /* GenericConferenceApp */ = {
 			isa = PBXGroup;
 			children = (
+				019B1D751A4AEE910097939C /* Utils */,
 				01FAE3B21A4AD01900DF3660 /* Views */,
 				01FAE3A91A4A0F8B00DF3660 /* Resources */,
 				01FAE3831A49FF4600DF3660 /* AppDelegate.swift */,
@@ -136,6 +163,7 @@
 		01FAE3A91A4A0F8B00DF3660 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0103593E1A52BDA400213C81 /* menu */,
 				01FAE3AA1A4A0F9A00DF3660 /* reveal-icon.png */,
 				01FAE3AB1A4A0F9A00DF3660 /* reveal-icon@2x.png */,
 			);
@@ -154,6 +182,7 @@
 		3B58F66D41A7A0EA0BD03671 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0103593C1A52BA8400213C81 /* SpriteKit.framework */,
 				813DEF88ED54006C0AA32046 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -251,11 +280,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				010359431A52C43B00213C81 /* sml-logo.png in Resources */,
 				01FAE38C1A49FF4600DF3660 /* Main.storyboard in Resources */,
 				01FAE3AD1A4A0F9A00DF3660 /* reveal-icon@2x.png in Resources */,
 				01FAE3911A49FF4600DF3660 /* LaunchScreen.xib in Resources */,
 				01FAE38E1A49FF4600DF3660 /* Images.xcassets in Resources */,
 				01FAE3AC1A4A0F9A00DF3660 /* reveal-icon.png in Resources */,
+				010359411A52BF5900213C81 /* menu-bcg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +339,7 @@
 			files = (
 				01FAE3891A49FF4600DF3660 /* ViewController.swift in Sources */,
 				01FAE3841A49FF4600DF3660 /* AppDelegate.swift in Sources */,
+				019B1D771A4AEEA40097939C /* GlobalConstants.swift in Sources */,
 				01FAE3871A49FF4600DF3660 /* GenericConferenceApp.xcdatamodeld in Sources */,
 				01FAE3B11A4AD00D00DF3660 /* MenuViewController.swift in Sources */,
 			);

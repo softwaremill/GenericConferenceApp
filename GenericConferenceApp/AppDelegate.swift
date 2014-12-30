@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        UILabel.appearance().textColor = UIColor.whiteColor()
+//        UIViewController.appearance().backgroundColor = GlobalConstants.BASE_COLOR
         // Override point for customization after application launch.
         return true
     }
