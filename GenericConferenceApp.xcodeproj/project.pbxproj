@@ -11,9 +11,11 @@
 		010359411A52BF5900213C81 /* menu-bcg.png in Resources */ = {isa = PBXBuildFile; fileRef = 010359401A52BF5900213C81 /* menu-bcg.png */; };
 		010359431A52C43B00213C81 /* sml-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 010359421A52C43B00213C81 /* sml-logo.png */; };
 		019B1D771A4AEEA40097939C /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B1D761A4AEEA40097939C /* GlobalConstants.swift */; };
+		01F1B32D1A532851004EAB08 /* TalksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1B32C1A532851004EAB08 /* TalksViewController.swift */; };
+		01F1B32F1A532C4A004EAB08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1B32E1A532C4A004EAB08 /* ViewController.swift */; };
 		01FAE3841A49FF4600DF3660 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FAE3831A49FF4600DF3660 /* AppDelegate.swift */; };
 		01FAE3871A49FF4600DF3660 /* GenericConferenceApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01FAE3851A49FF4600DF3660 /* GenericConferenceApp.xcdatamodeld */; };
-		01FAE3891A49FF4600DF3660 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FAE3881A49FF4600DF3660 /* ViewController.swift */; };
+		01FAE3891A49FF4600DF3660 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FAE3881A49FF4600DF3660 /* MainViewController.swift */; };
 		01FAE38C1A49FF4600DF3660 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01FAE38A1A49FF4600DF3660 /* Main.storyboard */; };
 		01FAE38E1A49FF4600DF3660 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01FAE38D1A49FF4600DF3660 /* Images.xcassets */; };
 		01FAE3911A49FF4600DF3660 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01FAE38F1A49FF4600DF3660 /* LaunchScreen.xib */; };
@@ -39,11 +41,13 @@
 		010359401A52BF5900213C81 /* menu-bcg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bcg.png"; sourceTree = "<group>"; };
 		010359421A52C43B00213C81 /* sml-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sml-logo.png"; sourceTree = "<group>"; };
 		019B1D761A4AEEA40097939C /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		01F1B32C1A532851004EAB08 /* TalksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksViewController.swift; sourceTree = "<group>"; };
+		01F1B32E1A532C4A004EAB08 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		01FAE37E1A49FF4600DF3660 /* GenericConferenceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericConferenceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01FAE3821A49FF4600DF3660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01FAE3831A49FF4600DF3660 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01FAE3861A49FF4600DF3660 /* GenericConferenceApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GenericConferenceApp.xcdatamodel; sourceTree = "<group>"; };
-		01FAE3881A49FF4600DF3660 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		01FAE3881A49FF4600DF3660 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		01FAE38B1A49FF4600DF3660 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01FAE38D1A49FF4600DF3660 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		01FAE3901A49FF4600DF3660 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -173,8 +177,10 @@
 		01FAE3B21A4AD01900DF3660 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				01FAE3881A49FF4600DF3660 /* ViewController.swift */,
+				01FAE3881A49FF4600DF3660 /* MainViewController.swift */,
 				01FAE3B01A4AD00D00DF3660 /* MenuViewController.swift */,
+				01F1B32C1A532851004EAB08 /* TalksViewController.swift */,
+				01F1B32E1A532C4A004EAB08 /* ViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -337,9 +343,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01FAE3891A49FF4600DF3660 /* ViewController.swift in Sources */,
+				01F1B32D1A532851004EAB08 /* TalksViewController.swift in Sources */,
+				01FAE3891A49FF4600DF3660 /* MainViewController.swift in Sources */,
 				01FAE3841A49FF4600DF3660 /* AppDelegate.swift in Sources */,
 				019B1D771A4AEEA40097939C /* GlobalConstants.swift in Sources */,
+				01F1B32F1A532C4A004EAB08 /* ViewController.swift in Sources */,
 				01FAE3871A49FF4600DF3660 /* GenericConferenceApp.xcdatamodeld in Sources */,
 				01FAE3B11A4AD00D00DF3660 /* MenuViewController.swift in Sources */,
 			);

@@ -26,14 +26,16 @@ class MenuViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        println("segue...")
+        if (segue.identifier == "talks") {
+            println("going to talks...")
+            let srvc = self.revealViewController;
+            let destination = segue.destinationViewController as TalksViewController;
+            self.revealViewController().setFrontViewController(destination, animated: true)
+            self.revealViewController().setFrontViewPosition(FrontViewPosition.Left, animated: true)
+        }
     }
-    */
+    
 
 }

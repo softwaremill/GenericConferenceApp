@@ -50,6 +50,9 @@
                                 <state key="normal" title="TALKS">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="JTF-3y-cjh" kind="custom" identifier="talks" customClass="SWRevealViewControllerSegueSetController" id="dIb-Nu-Tx6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hza-Ht-d2d">
                                 <rect key="frame" x="16" y="168" width="144" height="35"/>
@@ -109,6 +112,24 @@
             </objects>
             <point key="canvasLocation" x="200" y="-935"/>
         </scene>
+        <!--Talks View Controller-->
+        <scene sceneID="lGz-u6-XDM">
+            <objects>
+                <viewController id="JTF-3y-cjh" customClass="TalksViewController" customModule="GenericConferenceApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DmD-4r-GhQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="W75-RC-NRy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YFk-gZ-eDC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hC6-nK-sbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="-1003"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="5FD-L0-dEc">
             <objects>
@@ -125,10 +146,10 @@
             </objects>
             <point key="canvasLocation" x="371" y="-43"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="cJS-D5-5pQ">
             <objects>
-                <viewController id="6oP-Th-zAx" customClass="ViewController" customModule="GenericConferenceApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6oP-Th-zAx" customClass="MainViewController" customModule="GenericConferenceApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="plp-kM-EdI"/>
                         <viewControllerLayoutGuide type="bottom" id="3Lq-ZR-Pkh"/>
