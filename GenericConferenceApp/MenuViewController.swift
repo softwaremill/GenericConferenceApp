@@ -24,8 +24,8 @@ class MenuViewController: UIViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "talks") {
-            let srvc = self.revealViewController;
-            let destination = segue.destinationViewController as TalksViewController;
+            guard let destination = segue.destinationViewController as? TalksViewController else { return }
+            
             self.revealViewController().setFrontViewController(destination, animated: true)
             self.revealViewController().setFrontViewPosition(FrontViewPosition.Left, animated: true)
         }
