@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/EstimoteSDK" $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/EstimoteSDK" "${PODS_ROOT}/Headers/Public/SWRevealViewController"
+LIBRARY_SEARCH_PATHS = $(inherited) "$(PODS_ROOT)/EstimoteSDK" "$CONFIGURATION_BUILD_DIR/SWRevealViewController" $(inherited) "${PODS_ROOT}/EstimoteSDK/EstimoteSDK"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/EstimoteSDK" -isystem "${PODS_ROOT}/Headers/Public/SWRevealViewController"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"EstimoteSDK" -l"SWRevealViewController" -framework "CoreGraphics" -framework "CoreLocation" -framework "Foundation" -framework "MobileCoreServices" -framework "SystemConfiguration" -framework "UIKit"
+PODS_ROOT = ${SRCROOT}/Pods

@@ -2,7 +2,7 @@
 //  ESBeaconUpdateInfo.h
 //  EstimoteSDK
 //
-//  Version: 2.2.1
+//  Version: 2.4.0
 //  Created by Marcin Klimek on 06/03/14.
 //  Copyright (c) 2014 Estimote. All rights reserved.
 
@@ -41,26 +41,6 @@ typedef NS_ENUM(NSInteger, ESBeaconUpdateInfoStatus)
 @property (nonatomic, strong) ESTBeacon *beacon;
 
 /**
- *  Proximity UUID of the beacon device that should be updated.
- */
-@property (nonatomic, strong) NSUUID *UUID;
-
-/**
- *  Major of the beacon device that should be updated.
- */
-@property (nonatomic, strong) NSNumber *major;
-
-/**
- *  Minor of the beacon device that should be updated.
- */
-@property (nonatomic, strong) NSNumber *minor;
-
-/**
- *  Mac address of the beacon device.
- */
-@property (nonatomic, strong) NSString *macAddress;
-
-/**
  *  Bluetooth Peripheral object related to the beacon.
  */
 @property (nonatomic, strong) NSString *peripheralID;
@@ -90,13 +70,28 @@ typedef NS_ENUM(NSInteger, ESBeaconUpdateInfoStatus)
  *  Initialize object with beacon that is going to be updated and proper
  *  config file containing description how update should be performed.
  *
- *  @param beacon beacon object
- *  @param config config description for update
+ *  @param beacon Beacon object.
+ *  @param config Config description for update.
  *
  *  @return initialized instance of this class
  */
 - (instancetype)initWithBeacon:(ESTBeacon *)beacon
                         config:(ESTBeaconUpdateConfig *)config;
+
+/**
+ *  Initialize object with beacon that is going to be updated and proper
+ *  config file containing description how update should be performed
+ *  with delegate object.
+ *
+ *  @param beacon   Beacon object.
+ *  @param config   Config description for update.
+ *  @param delegate Delegate to receive events.
+ *
+ *  @return initialized instance of this class
+ */
+- (instancetype)initWithBeacon:(ESTBeacon *)beacon
+                        config:(ESTBeaconUpdateConfig *)config
+                      delegate:(id<ESBeaconUpdateInfoDelegate>)delegate NS_DESIGNATED_INITIALIZER;
 
 /**
  *  Scans for peripheral related with the beacon.

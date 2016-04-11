@@ -1,5 +1,5 @@
 PODS:
-  - EstimoteSDK (2.2.1)
+  - EstimoteSDK (2.4.0)
   - SWRevealViewController (2.3.0)
 
 DEPENDENCIES:
@@ -7,7 +7,9 @@ DEPENDENCIES:
   - SWRevealViewController (~> 2.3)
 
 SPEC CHECKSUMS:
-  EstimoteSDK: 3ae789ad99ce7a830d4679b8e4b663449f90ada3
-  SWRevealViewController: f6d80638b8e12323e87ac79562345403a799cb77
+  EstimoteSDK: d130c9d111b1c0522222afc97b43f245660cbd7c
+  SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
 
-COCOAPODS: 0.35.0
+PODFILE CHECKSUM: 76190fc69d949be004f30f8d4fc91c7575ee4dd9
+
+COCOAPODS: 1.0.0.beta.6
